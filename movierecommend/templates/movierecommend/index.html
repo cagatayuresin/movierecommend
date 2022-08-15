@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <title>{{ movie.title }}</title>
+</head>
+
+<body>
+  <div class="movie-container">
+    <a href="{{ movie.url }}">
+      <img class="poster" src="{{ movie.poster_url }}" alt="">
+    </a>
+    <a href="{{ movie.url }}">
+      <h1 class="title">{{ movie.title }}</h1>
+    </a>
+    <h1 class="imdb-point">IMDb: {{ movie.IMDb_point }}</h1>
+    <h2 class="director">Director: {{ movie.director }}</h2>
+    <h2 class="year">Year: {{ movie.year }}</h2>
+    <h3 class="genres">{{ movie.genres }}</h3>
+    <h4 class="duration">{{ movie.duration }} min</h4>
+  </div>
+</body>
+
+</html>

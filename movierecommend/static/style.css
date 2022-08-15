@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald:wght@200&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.movie-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+
+.poster {
+    width: 300px;
+}
